@@ -22,6 +22,8 @@
 	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mayence" type="text/css" />
 	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -71,6 +73,13 @@ function GoToTop() {
 </script>
 
 		<div class="content" id="IndividualDetail">
+			<div class="snapshot">
+				<div class="thumbnail">
+					<a href="../../../img/a/e/ff1bc9bf31e394f17e051f023ea.html" title="louis_gp_pierrefelix">
+						<img alt="louis_gp_pierrefelix" src="../../../thumb/a/e/ff1bc9bf31e394f17e051f023ea.png" />
+					</a>
+				</div>
+			</div>
 			<h3>THUILLOT, Pierre Félix<sup><small></small></sup></h3>
 			<div id="summaryarea">
 				<table class="infolist">
@@ -208,6 +217,82 @@ function GoToTop() {
 					</tr>
 				</table>
 			</div>
+			<div class="subsection" id="indivgallery">
+				<h4>Media</h4>
+				<div id="toggle_media" style="display:block">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/a/e/ff1bc9bf31e394f17e051f023ea.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(2)" src="../../../thumb/2/d/ff0f4c7ccb24055f400618d65d2.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(3)" src="../../../thumb/b/0/ff1bc9be98442d3adea84ef8f0b.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(4)" src="../../../thumb/1/3/ff1bc9bfa4a311b01f03d525b31.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(5)" src="../../../thumb/2/8/ff1bc9c01e16618de7c0fcfa082.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/5 - louis_gp_pierrefelix
+								</div>
+								<a href="../../../img/a/e/ff1bc9bf31e394f17e051f023ea.html">
+									<img src="../../../images/a/e/ff1bc9bf31e394f17e051f023ea.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								2/5 - AD Pierre Félix Henri THUILLOT 
+								</div>
+								<a href="../../../img/2/d/ff0f4c7ccb24055f400618d65d2.html">
+									<img src="../../../images/2/d/ff0f4c7ccb24055f400618d65d2.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								3/5 - gp_ge_louise_pierrefelix
+								</div>
+								<a href="../../../img/b/0/ff1bc9be98442d3adea84ef8f0b.html">
+									<img src="../../../images/b/0/ff1bc9be98442d3adea84ef8f0b.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								4/5 - ge_louise_pierrefelix_henrillette_gp
+								</div>
+								<a href="../../../img/1/3/ff1bc9bfa4a311b01f03d525b31.html">
+									<img src="../../../images/1/3/ff1bc9bfa4a311b01f03d525b31.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								5/5 - gp_henrillette_louise_pierrefelix_ge
+								</div>
+								<a href="../../../img/2/8/ff1bc9c01e16618de7c0fcfa082.html">
+									<img src="../../../images/2/8/ff1bc9c01e16618de7c0fcfa082.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
+				</div>
+				<div class="fullclear"></div>
+			</div>
 			<div class="subsection" id="pedigree">
 				<h4>Arbre généalogique</h4>
 				<ol class="pedigreegen" id="toggle_pedigree" style="display:block">
@@ -244,16 +329,34 @@ function GoToTop() {
 				<div class="tree" id="toggle_anc" style="display:block">
 					<div id="treeContainer" style="width:614px; height:300px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 80px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/0/e/ff0bccc6cd65dd14706343249e0.html">
-							THUILLOT, Pierre Félix<br>*1857<br>+1929
+							<a class="thumbnail" href="../../../ppl/0/e/ff0bccc6cd65dd14706343249e0.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: THUILLOT, Pierre Félix" src="../../../thumb/a/e/ff1bc9bf31e394f17e051f023ea.png" />
+										</td>
+										<td class="name">
+										THUILLOT, Pierre Félix<br>*1857<br>+1929
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 85px; left: 10px;"></div>
 						<div class="bvline" style="top: 100px; left: 285px; width: 15px"></div>
 						<div class="gvline" style="top: 105px; left: 285px; width: 20px"></div>
 						<div class="boxbg male AncCol1" style="top: 5px; left: 316px;">
-							<a class="noThumb" href="../../../ppl/d/b/ff0bcf75add27b8e3f81756f5bd.html">
-							THUILLOT, Félix<br>*<br>+...
+							<a class="thumbnail" href="../../../ppl/d/b/ff0bcf75add27b8e3f81756f5bd.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: THUILLOT, Félix" src="../../../thumb/7/e/ff1bcde1d60714bdebab1e6b8e7.png" />
+										</td>
+										<td class="name">
+										THUILLOT, Félix<br>*<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 10px; left: 320px;"></div>
@@ -278,7 +381,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Généré par <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1<br />Dernière modification le 2025-07-16 13:02:10
+			Généré par <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1<br />Dernière modification le 2025-07-21 12:09:51
 			</p>
 			<p id="copyright">
 			

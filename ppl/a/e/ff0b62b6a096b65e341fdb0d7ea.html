@@ -22,6 +22,8 @@
 	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mayence" type="text/css" />
 	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -71,6 +73,13 @@ function GoToTop() {
 </script>
 
 		<div class="content" id="IndividualDetail">
+			<div class="snapshot">
+				<div class="thumbnail">
+					<a href="../../../img/2/0/ff1bcb88bf6421a6e42cb353102.html" title="emilefrancois">
+						<img alt="emilefrancois" src="../../../thumb/2/0/ff1bcb88bf6421a6e42cb353102.png" />
+					</a>
+				</div>
+			</div>
 			<h3>MILLEY, Emile François<sup><small></small></sup></h3>
 			<div id="summaryarea">
 				<table class="infolist">
@@ -197,6 +206,38 @@ function GoToTop() {
 					</tr>
 				</table>
 			</div>
+			<div class="subsection" id="indivgallery">
+				<h4>Media</h4>
+				<div id="toggle_media" style="display:block">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/2/0/ff1bcb88bf6421a6e42cb353102.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/1 - emilefrancois
+								</div>
+								<a href="../../../img/2/0/ff1bcb88bf6421a6e42cb353102.html">
+									<img src="../../../images/2/0/ff1bcb88bf6421a6e42cb353102.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
+				</div>
+				<div class="fullclear"></div>
+			</div>
 			<div class="subsection" id="pedigree">
 				<h4>Arbre généalogique</h4>
 				<ol class="pedigreegen" id="toggle_pedigree" style="display:block">
@@ -230,8 +271,17 @@ function GoToTop() {
 				<div class="tree" id="toggle_anc" style="display:block">
 					<div id="treeContainer" style="width:924px; height:600px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 230px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/a/e/ff0b62b6a096b65e341fdb0d7ea.html">
-							MILLEY, Emile François<br>*1847-03-30<br>+...
+							<a class="thumbnail" href="../../../ppl/a/e/ff0b62b6a096b65e341fdb0d7ea.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: MILLEY, Emile François" src="../../../thumb/2/0/ff1bcb88bf6421a6e42cb353102.png" />
+										</td>
+										<td class="name">
+										MILLEY, Emile François<br>*1847-03-30<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 235px; left: 10px;"></div>
@@ -308,7 +358,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Généré par <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1<br />Dernière modification le 2025-07-17 09:07:51
+			Généré par <a href="http://gramps-project.org/">Gramps</a> AIO64-6.0.3--1<br />Dernière modification le 2025-07-21 12:12:55
 			</p>
 			<p id="copyright">
 			
